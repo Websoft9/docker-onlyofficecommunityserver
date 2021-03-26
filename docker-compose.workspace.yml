@@ -31,12 +31,12 @@ services:
      - DOCUMENT_SERVER_JWT_HEADER=AuthorizationJwt
      - MYSQL_SERVER_ROOT_PASSWORD=123456
      - MYSQL_SERVER_DB_NAME=onlyoffice
-     - MYSQL_SERVER_HOST=onlyoffice
+     - MYSQL_SERVER_HOST=onlyoffice-mysql-server
      - MYSQL_SERVER_USER=onlyoffice
      - MYSQL_SERVER_PASS=123456
      - MAIL_SERVER_API_PORT=8081
-     - MAIL_SERVER_API_HOST=onlyoffice
-     - MAIL_SERVER_DB_HOST=onlyoffice
+     - MAIL_SERVER_API_HOST=onlyoffice-mail-server
+     - MAIL_SERVER_DB_HOST=onlyoffice-mysql-server
      - MAIL_SERVER_DB_PORT=3306
      - MAIL_SERVER_DB_NAME=onlyoffice
      - MAIL_SERVER_DB_USER=onlyoffice
