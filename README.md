@@ -39,7 +39,7 @@ ln -sf /usr/local/bin/docker-compose  /usr/bin
 
 ## Installation
 
-We assume that you are already familiar with Docker, and please set the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml) before docker-compose up
+We assume that you are already familiar with Docker, and please set the default **database and application password** by [docker-compose file](docker-compose.workspace.yml) before docker-compose up
 
 ```
 git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
