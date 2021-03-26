@@ -22,6 +22,17 @@ The following are the minimal recommended requirements:
 
 To learn more, refer to the [Recommended System Requirements](https://github.com/ONLYOFFICE/Docker-CommunityServer#recommended-system-requirements): 
 
+## Pre-Installation
+
+If you have not install Docker and Docker-Compose, refer to the following commands to install it:
+
+```
+curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
+curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+ln -sf /usr/local/bin/docker-compose  /usr/bin
+```
+
 ## Installation
 
 We assume that you are already familiar with Docker, you can run ONLYOFFICE CommunityServer very easy by docker-compose.
@@ -34,18 +45,6 @@ docker-compose up -d
 > Please set or get the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml)
 
 Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9002* to start it.
-
-If you have not install Docker and Docker-Compose, refer to the following commands to install it:
-
-```
-curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
-curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-ln -sf /usr/local/bin/docker-compose  /usr/bin
-```
-
-
-
 
 
 ## Parameters
