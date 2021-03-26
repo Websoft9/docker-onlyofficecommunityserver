@@ -41,18 +41,14 @@ sudo chmod +x /usr/local/bin/docker-compose
 ln -sf /usr/local/bin/docker-compose  /usr/bin
 ```
 
-Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9002* to start use it
+Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9002* to start it.
 
-
-
+> You can set the default database password and application usename and password by [docker-compose file](docker-compose.yml)
 
 ## Parameters
 
 * **Services**: ONLYOFFICE CommunityServer, ONLYOFFICE DocumentServer, phpMyAdmin, MySQL5.7
-* **Database root password**: 1.9.0 or later
-* **ONLYOFFICE CommunityServer credentials**: 
 * **Ports**: 9090 for phpMyAdmin, 9002 for ONLYOFFICE DocumentServer
-
 
 ## Subscription
 
