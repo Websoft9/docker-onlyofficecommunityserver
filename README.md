@@ -6,7 +6,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-This repository is developed by [Websoft9](https://www.websoft9.com), is an **Cloud Native** docker-compose solution. It helps user install [ONLYOFFICE CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer) and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+This repository is developed by [Websoft9](https://www.websoft9.com), is an **Cloud Native** docker-compose solution. It helps users to install [ONLYOFFICE CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer) and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
 ## System Requirements
 
@@ -41,7 +41,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 ln -sf /usr/local/bin/docker-compose  /usr/bin
 ```
 
-Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9002* to start it.
+Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9003* to start it.
 
 > You can set or get the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml)
 
@@ -56,7 +56,7 @@ We have publish ONLYOFFICE CommunityServer on major Cloud Platform, just [subscr
 
 ## Links
 
-* [Documentation](https://support.websoft9.com/docs/rabbitmq)
+* [Documentation](https://support.websoft9.com/docs/onlyoffice)
 * [CHANGELOG](/CHANGELOG.md)
 * [License](/License.md)
 
