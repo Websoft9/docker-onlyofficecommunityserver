@@ -64,9 +64,8 @@ We have publish ONLYOFFICE CommunityServer on major Cloud Platform, just [subscr
 
 #### Do I need to change the password before docker-compose up?
 
-Yes, you should modify all password at docker-compose file, include database password and application password.
+Yes, you should modify all database password and application password at docker-compose file for production
 
 #### What the default username and password?
 
 Refer to comment area at the top of docker-compose file
-
