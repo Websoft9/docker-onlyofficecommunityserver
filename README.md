@@ -42,7 +42,7 @@ git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
 cd docker-onlyofficecommunityserver
 docker-compose up -d
 ```
-Once complete installation, you can use you local browser to access URL: ***http://Instance's Internet IP:9003*** to start it.
+Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9003* to start it.
 
 ## Parameters
 
