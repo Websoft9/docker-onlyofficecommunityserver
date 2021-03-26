@@ -6,7 +6,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-**ONLYOFFICE CommunityServer Docker**, developed by [Websoft9](https://www.websoft9.com), is an **Cloud Native** docker-compose solution from [ONLYOFFICE CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer). It helps user install ONLYOFFICE CommunityServer and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+**ONLYOFFICE CommunityServer Docker**, developed by [Websoft9](https://www.websoft9.com), is an **Cloud Native** docker-compose solution. It helps user install [ONLYOFFICE CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer) and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
 
 ## System Requirements
 
