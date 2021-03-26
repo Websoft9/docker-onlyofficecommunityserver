@@ -31,15 +31,15 @@ services:
      - DOCUMENT_SERVER_JWT_HEADER=AuthorizationJwt
      - MYSQL_SERVER_ROOT_PASSWORD=123456
      - MYSQL_SERVER_DB_NAME=onlyoffice
-     - MYSQL_SERVER_HOST=onlyoffice-mysql-server
+     - MYSQL_SERVER_HOST=onlyoffice
      - MYSQL_SERVER_USER=onlyoffice
      - MYSQL_SERVER_PASS=123456
      - MAIL_SERVER_API_PORT=8081
-     - MAIL_SERVER_API_HOST=onlyoffice-mail-server
-     - MAIL_SERVER_DB_HOST=onlyoffice-mysql-server
+     - MAIL_SERVER_API_HOST=onlyoffice
+     - MAIL_SERVER_DB_HOST=onlyoffice
      - MAIL_SERVER_DB_PORT=3306
-     - MAIL_SERVER_DB_NAME=onlyoffice_mailserver
-     - MAIL_SERVER_DB_USER=onlyoffice_mailserver_user
+     - MAIL_SERVER_DB_NAME=onlyoffice
+     - MAIL_SERVER_DB_USER=onlyoffice
      - MAIL_SERVER_DB_PASS=123456
     ports:
      - '9003:80'
@@ -84,12 +84,12 @@ services:
     environment:
        - MYSQL_SERVER=onlyoffice-mysql-server
        - MYSQL_SERVER_PORT=3306
-       - MYSQL_ROOT_USER=onlyoffice_mailserver_user
+       - MYSQL_ROOT_USER=onlyoffice
        - MYSQL_ROOT_PASSWD=123456
-       - MYSQL_SERVER_DB_NAME=onlyoffice_mailserver
+       - MYSQL_SERVER_DB_NAME=onlyoffice
     restart: always
     privileged: true
-    ports: ['25:25','143:143','587:587']
+    ports: ['26:25','143:143','587:587']
     stdin_open: true
     tty: true
     expose:
