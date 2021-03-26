@@ -6,11 +6,15 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
+<<<<<<< HEAD
 This repository is developed by [Websoft9](https://www.websoft9.com), is an **Cloud Native** docker-compose solution. It helps users to install [ONLYOFFICE CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer) and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+=======
+This repository is an **Cloud Native solution** powered by [Websoft9](https://www.websoft9.com) to for installing [ONLYOFFICE CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer) and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
+>>>>>>> dc4755a76bfc8af782ae06e999d6f622fcbbf7bf
 
 ## System Requirements
 
-The following is the minimal recommended requirements:
+The following are the minimal recommended requirements:
 
 * **OS**: 64-bit Red Hat, CentOS or other compatible distributive with kernel version 3.8 or later, 64-bit Debian, Ubuntu or other compatible distributive with kernel version 3.8 or later
 * **ARCH**: amd64
@@ -22,15 +26,7 @@ The following is the minimal recommended requirements:
 
 To learn more, refer to the [Recommended System Requirements](https://github.com/ONLYOFFICE/Docker-CommunityServer#recommended-system-requirements): 
 
-## Installation
-
-We assume that you are already familiar with Docker, you can run ONLYOFFICE CommunityServer very easy by docker-compose.
-
-```
-git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
-cd docker-onlyofficecommunityserver
-docker-compose up -d
-```
+## Pre-Installation
 
 If you have not install Docker and Docker-Compose, refer to the following commands to install it:
 
@@ -41,9 +37,16 @@ sudo chmod +x /usr/local/bin/docker-compose
 ln -sf /usr/local/bin/docker-compose  /usr/bin
 ```
 
-Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9003* to start it.
+## Installation
 
-> You can set or get the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml)
+We assume that you are already familiar with Docker, and please set the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml) before docker-compose up
+
+```
+git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
+cd docker-onlyofficecommunityserver
+docker-compose up -d
+```
+Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9003* to start it.
 
 ## Parameters
 
