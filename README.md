@@ -10,7 +10,7 @@ This repository is an **Cloud Native solution** powered by [Websoft9](https://ww
 
 ## System Requirements
 
-The following is the minimal recommended requirements:
+The following are the minimal recommended requirements:
 
 * **OS**: 64-bit Red Hat, CentOS or other compatible distributive with kernel version 3.8 or later, 64-bit Debian, Ubuntu or other compatible distributive with kernel version 3.8 or later
 * **ARCH**: amd64
@@ -31,6 +31,9 @@ git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
 cd docker-onlyofficecommunityserver
 docker-compose up -d
 ```
+> Please set or get the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml)
+
+Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9002* to start it.
 
 If you have not install Docker and Docker-Compose, refer to the following commands to install it:
 
@@ -41,9 +44,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 ln -sf /usr/local/bin/docker-compose  /usr/bin
 ```
 
-Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9002* to start it.
 
-> You can set or get the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml)
+
+
 
 ## Parameters
 
