@@ -52,7 +52,7 @@ Once complete installation, you can use you local browser to access URL: *http:/
 
 ## Subscription
 
-We have publish ONLYOFFICE CommunityServer on major Cloud Platform, just [subscribe it](https://apps.websoft9.com/onlyoffice) you can deployment it automatically and get our **Enterprise Support** to ensure high availability of applications.
+We have publish ONLYOFFICE CommunityServer on major Cloud Platform, just [subscribe it](https://apps.websoft9.com/onlyoffice) you can deployment it automatically and get our Enterprise Support to ensure high availability of applications.
 
 ## Links
 
