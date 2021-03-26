@@ -5,8 +5,6 @@ services:
     image: mysql:5.7
     environment:
      - MYSQL_ROOT_PASSWORD=123456
-    networks:
-     - apps
     ports: 
      - 3306:3306
     stdin_open: true
@@ -43,8 +41,6 @@ services:
      - MAIL_SERVER_DB_NAME=onlyoffice_mailserver
      - MAIL_SERVER_DB_USER=onlyoffice_mailserver_user
      - MAIL_SERVER_DB_PASS=123456
-    networks:
-     - apps
     ports:
      - '9003:80'
      - '5222:5222'
@@ -69,10 +65,10 @@ services:
      - JWT_ENABLED=true
      - JWT_SECRET=jwt_secret
      - JWT_HEADER=AuthorizationJwt
-    networks:
-      - apps
-    expose:
+    ports:
       - '9002:80'
+    expose:
+      - '80'
       - '443'
     volumes:
        - document_data:/var/www/onlyoffice/Data
@@ -91,8 +87,6 @@ services:
        - MYSQL_ROOT_USER=onlyoffice_mailserver_user
        - MYSQL_ROOT_PASSWD=123456
        - MYSQL_SERVER_DB_NAME=onlyoffice_mailserver
-    networks:
-      - apps
     restart: always
     privileged: true
     ports: ['25:25','143:143','587:587']
@@ -122,13 +116,14 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - controlpanel_data:/var/www/onlyoffice/Data
       - controlpanel_log:/var/log/onlyoffice
-    networks:
-      - apps
     stdin_open: true
     tty: true
+
 networks:
-  apps:
-    driver: 'bridge'
+  default:
+    external:
+      name: "apps"
+
 volumes:
   mail_data:
   mail_certs:
