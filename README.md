@@ -35,19 +35,18 @@ ln -sf /usr/local/bin/docker-compose  /usr/bin
 
 ## Installation
 
-We assume that you are already familiar with Docker, and you can modify [docker-compose file](docker-compose.workspace.yml) by yourselt
+We assume that you are already familiar with Docker, and you can modify [docker-compose file](docker-compose.workspace.yml) by yourself
 
 ```
 git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
 cd docker-onlyofficecommunityserver
 docker-compose up -d
 ```
-Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9003* to start it.
 
 ## Parameters
 
 * **Services**: ONLYOFFICE CommunityServer, ONLYOFFICE DocumentServer, phpMyAdmin, MySQL5.7
-* **Ports**: 9090 for phpMyAdmin, 9002 for ONLYOFFICE DocumentServer
+* **Ports**: 9003 for ONLYOFFICE CommunityServer, 9090 for phpMyAdmin, 9002 for ONLYOFFICE DocumentServer
 
 ## Subscription
 
