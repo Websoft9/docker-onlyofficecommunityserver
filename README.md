@@ -35,17 +35,14 @@ ln -sf /usr/local/bin/docker-compose  /usr/bin
 
 ## Installation
 
-We assume that you are already familiar with Docker, you can run ONLYOFFICE CommunityServer very easy by docker-compose.
+We assume that you are already familiar with Docker, and please set the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml) before docker-compose up
 
 ```
 git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
 cd docker-onlyofficecommunityserver
 docker-compose up -d
 ```
-> Please set or get the default **database password and application usename and password** by [docker-compose file](docker-compose.workspace.yml)
-
 Once complete installation, you can use you local browser to access URL: *http://Instance's Internet IP:9002* to start it.
-
 
 ## Parameters
 
