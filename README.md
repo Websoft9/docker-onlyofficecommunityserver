@@ -6,11 +6,7 @@
 
 [English](/README.md) | [简体中文](/README-zh.md)  
 
-<<<<<<< HEAD
-This repository is developed by [Websoft9](https://www.websoft9.com), is an **Cloud Native** docker-compose solution. It helps users to install [ONLYOFFICE CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer) and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
-=======
 This repository is an **Cloud Native solution** powered by [Websoft9](https://www.websoft9.com) to for installing [ONLYOFFICE CommunityServer](https://github.com/ONLYOFFICE/Docker-CommunityServer) and pre-configure required items automatically and users only need to run a command on Linux. It simplifies the complicated installation and initialization process.  
->>>>>>> dc4755a76bfc8af782ae06e999d6f622fcbbf7bf
 
 ## System Requirements
 
