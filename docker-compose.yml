@@ -96,15 +96,3 @@ networks:
   default:
     external:
       name: "apps"
-    
-volumes:
-  document_data:
-  document_log:
-  document_forgotten:
-  community_mysql:
-  community_data:
-  community_log:
-  community_letsencrypt:
-  controlpanel_data:
-  controlpanel_log:
-  mysql_data:
