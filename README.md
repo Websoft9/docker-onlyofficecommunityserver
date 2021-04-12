@@ -64,25 +64,32 @@ Yes, you should modify all database password and application password at docker-
 #### Docker runing failed for the reason that port conflict?
 You should modify ports at [docker-compose file](docker-compose-production.yml) and docker-compose again
 
-#### Do I need to change the password before docker-compose up?  
-Yes, you should modify all database password and application password at docker-compose file for production  
+#### question1  
+answer1  
 
-#### What the default username and password?  
-Refer to comment area at the top of docker-compose file  
+#### question2  
+answer2  
 
 ### Usage instructions
 
-You can point your browser to: *http://Instance's Internet IP:9003*  
+You can point your browser to: *http://Instance's Internet IP:9002*  
 
 The following is the information that may be needed during use
+
+#### Credentials
+
+By default, the available users are:
+
+| Username    | Password |
+| ------- | -------- |
+|  admin | 123456  |
 
 #### Services and Ports
 
 | Service | Port | Use |  Necessity |
 | --- | --- | --- | --- |
-| onlyoffice-server | 9003 | Browser access to ONLYOFFICE by http | Y |
-| onlyoffice-document-server | 9002 | Browser access to  ONLYOFFICE Document by http | Y |
-| mysql | 3006 | Accessing MySQL database with TCP | Y |
+| onlyoffice-server | 9002 | Web-GUI database management tool | Y |
+| phpmyadmin | 9090 | Web-GUI database management tool | Y |
 ## Documentation
 
 [ONLYOFFICE Administrator Guide](https://support.websoft9.com/docs/onlyoffice)
