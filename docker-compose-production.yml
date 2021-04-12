@@ -56,7 +56,7 @@ services:
      
   onlyoffice-document-server:
     container_name: onlyoffice-document-server
-    image: onlyoffice/documentserver:6.0.2
+    image: onlyoffice/documentserver-ee:6.0.2
     stdin_open: true
     tty: true
     restart: always
