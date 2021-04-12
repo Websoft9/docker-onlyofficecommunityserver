@@ -1,4 +1,4 @@
-# ONLYOFFICE on Docker
+# {{trademark}} on Docker
 
 ![](https://libs.websoft9.com/common/websott9-cloud-installer.png) 
 
@@ -10,16 +10,16 @@ This repository is an **Cloud Native solution** powered by [Websoft9](https://ww
 
 ## System Requirements
 
-The following are the minimal [recommended requirements](https://github.com/onlyoffice/docker#recommended-system-requirements):
+The following are the minimal [recommended requirements]({{requirements.url}}):
 
 * **OS**: Red Hat, CentOS, Debian, Ubuntu or other's Linux OS
 * **Public Cloud**: More than 20+ major Cloud such as AWS, Azure, Google Cloud, Alibaba Cloud, HUAWEIClOUD, Tencent Cloud
 * **Private Cloud**: KVM, VMware, VirtualBox, OpenStack
-* **ARCH**:  Linux x86-64, ARM 32/64, Windows x86-64, IBM POWER8, x86/i686
-* **RAM**: 4 GB or more
-* **CPU**: 2 cores or higher
-* **HDD**: at least 20 GB of free space
-* **Swap file**: at least 2 GB
+* **ARCH**:  {{requirements.cpu_arch}}
+* **RAM**: {{requirements.memory}} GB or more
+* **CPU**: {{requirements.cpu}} cores or higher
+* **HDD**: at least {{requirements.disk}} GB of free space
+* **Swap file**: at least {{requirements.swap}} GB
 * **bandwidth**: more fluent experience over 100M  
 
 ## QuickStart
@@ -29,7 +29,7 @@ The following are the minimal [recommended requirements](https://github.com/only
 Use SSH to connect your instance and run the automatic installation script below
 
 ```
-sudo wget -N https://download.websoft9.com/docker/install.sh; sudo bash install.sh -r onlyoffice
+sudo wget -N https://download.websoft9.com/docker/install.sh; sudo bash install.sh -r {{name}}
 ```
 
 ### Manual Installation
@@ -46,14 +46,14 @@ ln -sf /usr/local/bin/docker-compose  /usr/bin
 sudo systemctl start docker
 ```
 
-#### Install ONLYOFFICE
+#### Install {{trademark}}
 
-We assume that you are already familiar with Docker, and you can modify [docker-compose file](docker-compose-production.yml) by yourself
+We assume that you are already familiar with Docker, and you can modify [docker-compose file]({{compose_file}}) by yourself
 
 ```
-git clone --depth=1 https://github.com/Websoft9/docker-onlyoffice
-cd docker-onlyoffice
-docker-compose -f docker-compose-production.yml up -d
+git clone --depth=1 https://github.com/Websoft9/docker-{{name}}
+cd docker-{{name}}
+docker-compose -f {{compose_file}} up -d
 ```
 
 ### FAQ
@@ -64,32 +64,45 @@ Yes, you should modify all database password and application password at docker-
 #### Docker runing failed for the reason that port conflict?
 You should modify ports at [docker-compose file](docker-compose-production.yml) and docker-compose again
 
-#### Do I need to change the password before docker-compose up?  
-Yes, you should modify all database password and application password at docker-compose file for production  
+{% for faq in faqs -%}
+#### {{faq.question_en}}  
+{{faq.answer_en}}  
 
-#### What the default username and password?  
-Refer to comment area at the top of docker-compose file  
+{% endfor -%}  
+
 
 ### Usage instructions
 
-You can point your browser to: *http://Instance's Internet IP:9003*  
+You can point your browser to: *http://Instance's Internet IP:{{services[0].port}}*  
 
 The following is the information that may be needed during use
+
+{% if user is defined -%}
+#### Credentials
+
+By default, the available users are:
+
+| Username    | Password |
+| ------- | -------- |
+|  {{user.username}} | {{user.password}}  |
+
+{% endif -%}
 
 #### Services and Ports
 
 | Service | Port | Use |  Necessity |
 | --- | --- | --- | --- |
-| onlyoffice-server | 9003 | Browser access to ONLYOFFICE by http | Y |
-| onlyoffice-document-server | 9002 | Browser access to  ONLYOFFICE Document by http | Y |
-| mysql | 3006 | Accessing MySQL database with TCP | Y |
+{% for service in services -%}
+| {{service.name}} | {{service.port}} | {{service.description_en}} | {{service.required}} |
+{% endfor -%} 
+
 ## Documentation
 
-[ONLYOFFICE Administrator Guide](https://support.websoft9.com/docs/onlyoffice)
+[{{trademark}} Administrator Guide](https://support.websoft9.com/docs/{{name}})
 
 ## Enterprise Support
 
-If you want to get our Enterprise Support to ensure high availability of applications, you can subscribe our [ONLYOFFICE Enterprise Support](https://apps.websoft9.com/onlyoffice) 
+If you want to get our Enterprise Support to ensure high availability of applications, you can subscribe our [{{trademark}} Enterprise Support](https://apps.websoft9.com/{{name}}) 
 
 What you get with a Enterprise Support subscription?
 
