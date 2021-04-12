@@ -1,5 +1,5 @@
 {
-  "name": "onlyoffice",
+  "name": "onlyofficecommunityserver",
   "trademark": "ONLYOFFICE",
   "compose_file": "docker-compose-production.yml",
   "fork_url": "https://github.com/ONLYOFFICE/Docker-CommunityServer",
