@@ -2,7 +2,7 @@
 # default MySQL root password is 123456
 
 
-version: '3'
+version: '3.7'
 services:
   onlyoffice-mysql-server:
     container_name: onlyoffice-mysql-server
@@ -17,7 +17,7 @@ services:
     volumes:
      - ./config/mysql/conf.d:/etc/mysql/conf.d
      - ./config/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
-     - ./mysql_data:/var/lib/mysql
+     - ./volumes/mysql_data:/var/lib/mysql
      
   onlyoffice-community-server:
     container_name: onlyoffice-community-server
@@ -47,12 +47,12 @@ services:
     restart: always
     privileged: true
     volumes:
-     - ./community_data:/var/www/onlyoffice/Data
-     - ./community_log:/var/log/onlyoffice
-     - ./community_letsencrypt:/etc/letsencrypt
-     - ./document_data:/var/www/onlyoffice/DocumentServerData
+     - ./volumes/community_data:/var/www/onlyoffice/Data
+     - ./volumes/community_log:/var/log/onlyoffice
+     - ./volumes/community_letsencrypt:/etc/letsencrypt
+     - ./volumes/document_data:/var/www/onlyoffice/DocumentServerData
      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-     - ./certs:/var/www/onlyoffice/Data/certs
+     - ./volumes/certs:/var/www/onlyoffice/Data/certs
      
   onlyoffice-document-server:
     container_name: onlyoffice-document-server
@@ -70,10 +70,10 @@ services:
       - '80'
       - '443'
     volumes:
-       - ./document_data:/var/www/onlyoffice/Data
-       - ./document_log:/var/log/onlyoffice
-       - ./document_fonts:/usr/share/fonts/truetype/custom
-       - .document_forgotten:/var/lib/onlyoffice/documentserver/App_Data/cache/files/forgotten
+       - ./volumes/document_data:/var/www/onlyoffice/Data
+       - ./volumes/document_log:/var/log/onlyoffice
+       - ./volumes/document_fonts:/usr/share/fonts/truetype/custom
+       - ./volumes/document_forgotten:/var/lib/onlyoffice/documentserver/App_Data/cache/files/forgotten
 
   onlyoffice-control-panel:
     container_name: onlyoffice-control-panel
@@ -89,12 +89,11 @@ services:
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./controlpanel_data:/var/www/onlyoffice/Data
-      - ./controlpanel_log:/var/log/onlyoffice
+      - ./volumes/controlpanel_data:/var/www/onlyoffice/Data
+      - ./volumes/controlpanel_log:/var/log/onlyoffice
     stdin_open: true
     tty: true
     
 networks:
   default:
-    external:
       name: "apps"
