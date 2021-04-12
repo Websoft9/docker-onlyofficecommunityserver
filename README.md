@@ -29,7 +29,7 @@ The following are the minimal [recommended requirements](https://github.com/only
 Use SSH to connect your instance and run the automatic installation script below
 
 ```
-sudo wget -N https://download.websoft9.com/docker/install.sh; sudo bash install.sh -r onlyofficecommunityserver
+sudo wget -N https://download.websoft9.com/docker/install.sh; sudo bash install.sh -r onlyoffice
 ```
 
 ### Manual Installation
@@ -51,8 +51,8 @@ sudo systemctl start docker
 We assume that you are already familiar with Docker, and you can modify [docker-compose file](docker-compose-production.yml) by yourself
 
 ```
-git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
-cd docker-onlyofficecommunityserver
+git clone --depth=1 https://github.com/Websoft9/docker-onlyoffice
+cd docker-onlyoffice
 docker-compose -f docker-compose-production.yml up -d
 ```
 
@@ -85,11 +85,11 @@ The following is the information that may be needed during use
 | mysql | 3006 | Accessing MySQL database with TCP | Y |
 ## Documentation
 
-[ONLYOFFICE Administrator Guide](https://support.websoft9.com/docs/onlyofficecommunityserver)
+[ONLYOFFICE Administrator Guide](https://support.websoft9.com/docs/onlyoffice)
 
 ## Enterprise Support
 
-If you want to get our Enterprise Support to ensure high availability of applications, you can subscribe our [ONLYOFFICE Enterprise Support](https://apps.websoft9.com/onlyofficecommunityserver) 
+If you want to get our Enterprise Support to ensure high availability of applications, you can subscribe our [ONLYOFFICE Enterprise Support](https://apps.websoft9.com/onlyoffice) 
 
 What you get with a Enterprise Support subscription?
 

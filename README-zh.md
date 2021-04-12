@@ -29,7 +29,7 @@
 登录 Linux，运行下面的**自动化命令**即可启动安装并显示安装结果。  
 
 ```
-sudo wget -N https://download.websoft9.com/docker/install.sh; sudo bash install.sh -r onlyofficecommunityserver
+sudo wget -N https://download.websoft9.com/docker/install.sh; sudo bash install.sh -r onlyoffice
 ```
 
 ### 手动安装
@@ -53,8 +53,8 @@ sudo systemctl start docker
 直接运行下面的命令快速安装应用。如果你熟悉 Docker，建议先修改 [docker-compose](docker-compose-production.yml) 文件以满足自己的需求
 
 ```
-git clone --depth=1 https://github.com/Websoft9/docker-onlyofficecommunityserver
-cd docker-onlyofficecommunityserver
+git clone --depth=1 https://github.com/Websoft9/docker-onlyoffice
+cd docker-onlyoffice
 sudo docker-compose -f docker-compose-production.yml up -d
 ```
 
@@ -90,11 +90,11 @@ sudo docker-compose -f docker-compose-production.yml up -d
 | mysql | 3006 | TCP 访问mysql数据库 | Y |
 ## 文档
 
-[ONLYOFFICE 管理员手册](https://support.websoft9.com/docs/onlyofficecommunityserver)
+[ONLYOFFICE 管理员手册](https://support.websoft9.com/docs/onlyoffice)
 
 ## 企业级支持
 
-如果需要企业级支持，请订阅我们提供的 [ONLYOFFICE 企业级支持版](https://apps.websoft9.com/onlyofficecommunityserver) 
+如果需要企业级支持，请订阅我们提供的 [ONLYOFFICE 企业级支持版](https://apps.websoft9.com/onlyoffice) 
 
 订阅企业级产品后，您可获得：
 
