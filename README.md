@@ -10,7 +10,7 @@ This repository is an **Cloud Native solution** powered by [Websoft9](https://ww
 
 ## System Requirements
 
-The following are the minimal [recommended requirements](https://github.com/onlyoffice/docker#recommended-system-requirements):
+The following are the minimal [recommended requirements](https://github.com/ONLYOFFICE/Docker-CommunityServer):
 
 * **OS**: Red Hat, CentOS, Debian, Ubuntu or other's Linux OS
 * **Public Cloud**: More than 20+ major Cloud such as AWS, Azure, Google Cloud, Alibaba Cloud, HUAWEIClOUD, Tencent Cloud

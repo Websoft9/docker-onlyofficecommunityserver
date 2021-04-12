@@ -10,7 +10,7 @@
 
 ## 系统要求
 
-安装本项目，确保符合如下的条件（[详细参考](https://github.com/onlyoffice/docker#recommended-system-requirements)）：
+安装本项目，确保符合如下的条件（[详细参考](https://github.com/ONLYOFFICE/Docker-CommunityServer)）：
 
 * **操作系统**: Red Hat, CentOS, Debian, Ubuntu 等主流 Linux 操作系统
 * **公有云**: AWS, Azure, Google Cloud, 阿里云, 腾讯云, 华为云等20多个全球主流云
