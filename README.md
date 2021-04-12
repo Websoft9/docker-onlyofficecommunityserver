@@ -40,7 +40,7 @@ If you have not install Docker and Docker-Compose, refer to the following comman
 
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
-curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ln -sf /usr/local/bin/docker-compose  /usr/bin
 sudo systemctl start docker
@@ -63,12 +63,6 @@ Yes, you should modify all database password and application password at docker-
 
 #### Docker runing failed for the reason that port conflict?
 You should modify ports at [docker-compose file](docker-compose-production.yml) and docker-compose again
-
-#### Do I need to change the password before docker-compose up?  
-Yes, you should modify all database password and application password at docker-compose file for production  
-
-#### What the default username and password?  
-Refer to comment area at the top of docker-compose file  
 
 ### Usage instructions
 

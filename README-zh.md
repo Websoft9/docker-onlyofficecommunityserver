@@ -42,7 +42,7 @@ sudo wget -N https://download.websoft9.com/docker/install.sh; sudo bash install.
 
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
-curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ln -sf /usr/local/bin/docker-compose  /usr/bin
 sudo systemctl start docker
@@ -68,12 +68,6 @@ sudo docker-compose -f docker-compose-production.yml up -d
 
 修改 [docker-compose](docker-compose-production.yml) 文件中冲突的端口，然后再启动容器
 
-
-#### 启动OnlyOffice前需要更改密码吗？  
-是的, 在生产环境中，您应该在docker compose文件中修改所有数据库密码和应用程序密码  
-
-#### OnlyOffice默认的用户名和密码是什么？  
-请参照[docker-compose file](docker-compose-production.yml)的上方注释区域  
 
 ### 使用说明
 
