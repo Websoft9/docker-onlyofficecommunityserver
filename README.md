@@ -76,7 +76,7 @@ The following is the information that may be needed during use
 | --- | --- | --- | --- |
 | onlyoffice-server | 9003 | Browser access to ONLYOFFICE by http | Y |
 | onlyoffice-document-server | 9002 | Browser access to  ONLYOFFICE Document by http | Y |
-| mysql | 3006 | Accessing MySQL database with TCP | Y |
+| mysql | 3306 | Accessing MySQL database with TCP | Y |
 ## Documentation
 
 [ONLYOFFICE Administrator Guide](https://support.websoft9.com/docs/onlyoffice)
