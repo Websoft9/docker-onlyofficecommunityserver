@@ -69,32 +69,25 @@ sudo docker-compose -f docker-compose-production.yml up -d
 修改 [docker-compose](docker-compose-production.yml) 文件中冲突的端口，然后再启动容器
 
 
-#### 问题1  
-答案1  
+#### 启动OnlyOffice前需要更改密码吗？  
+是的, 在生产环境中，您应该在docker compose文件中修改所有数据库密码和应用程序密码  
 
-#### 问题2  
-答案2  
+#### OnlyOffice默认的用户名和密码是什么？  
+请参照[docker-compose file](docker-compose-production.yml)的上方注释区域  
 
 ### 使用说明
 
-启动应用后，本地浏览器访问 URL: *http://服务器公网IP:9002* 进入应用。  
+启动应用后，本地浏览器访问 URL: *http://服务器公网IP:9003* 进入应用。  
 
 下面是使用过程中可能需要的信息
-
-#### 账号
-
-本应用默认安装后的管理员用户名和密码如下：
-
-| 用户名    | 密码 |
-| ------- | -------- |
-|  admin | 123456  |
 
 #### 服务和端口
 
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
-| onlyoffice-server | 9002 | 浏览器访问 ONLYOFFICE | Y |
-| phpmyadmin | 9090 | 数据库可视化管理工具 | Y |
+| onlyoffice-server | 9003 | 浏览器访问 ONLYOFFICE | Y |
+| onlyoffice-document-server | 9002 | 浏览器访问 ONLYOFFICE Document | Y |
+| mysql | 3006 | TCP 访问mysql数据库 | Y |
 ## 文档
 
 [ONLYOFFICE 管理员手册](https://support.websoft9.com/docs/onlyoffice)
