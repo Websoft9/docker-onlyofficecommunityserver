@@ -21,7 +21,7 @@ services:
      
   onlyoffice-community-server:
     container_name: ${APP_CONTAINER_NAME}
-    image: onlyoffice/communityserver:11.0.0.1458
+    image: onlyoffice/communityserver:${APP_VERSION}
     depends_on:
      - onlyoffice-mysql-server
      - onlyoffice-document-server
