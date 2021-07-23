@@ -20,7 +20,7 @@
 * **CPU**: 2核以上
 * **存储**: 20GB以上
 * **Swap分区**: 2GB以上
-* **带宽**: 100M 以上体验更流畅
+* **带宽**: 100M以上体验更流畅
 
 ## 安装使用
 
@@ -69,7 +69,7 @@ sudo systemctl start docker
 ```
 git clone --depth=1 https://github.com/Websoft9/docker-onlyoffice
 cd docker-onlyoffice
-sudo docker-compose -f docker-compose-production.yml up -d
+sudo docker-compose -f docker-compose-production.yml --env-file .env_all up -d
 ```
 
 ### 常见问题
