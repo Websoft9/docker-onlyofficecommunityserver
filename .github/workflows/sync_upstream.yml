@@ -2,7 +2,8 @@ name: Sync remoting source
 on: 
   repository_dispatch:
   push:
-    paths: variables.json
+    branches: 
+      - main
 
 jobs:
   build:
