@@ -93,7 +93,7 @@ sudo docker-compose -f docker-compose-production.yml --env-file .env_all up -d
 
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
-| onlyoffice-server | 9003 | 浏览器访问 ONLYOFFICE | Y |
+| onlyoffice-server | 9003 | 浏览器访问ONLYOFFICE | Y |
 | onlyoffice-document-server | 9002 | 浏览器访问 ONLYOFFICE Document | Y |
 | mysql | 3306 | TCP 访问mysql数据库 | Y |
 ## 文档
